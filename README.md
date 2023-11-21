@@ -1,4 +1,4 @@
-# auth_screens
+# Auth-Screens
 
 A new Flutter project.
 
