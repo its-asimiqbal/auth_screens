@@ -1,6 +1,9 @@
 import 'package:auth_screens/utils/my_button.dart';
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
+import 'signup_screen.dart';
+
 class LoginSignupScreen extends StatefulWidget {
   const LoginSignupScreen({super.key});
 
@@ -34,7 +37,14 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                     ),
                   ),
                   MyButton(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ),
+                      );
+                    },
                     customColor: Colors.white.withOpacity(.7),
                     text: 'Sign In',
                   ),
@@ -42,7 +52,14 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                     height: 20,
                   ),
                   MyButton(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignUpScreen(),
+                        ),
+                      );
+                    },
                     customColor: const Color.fromARGB(255, 10, 185, 121),
                     text: 'Create an account',
                   ),
@@ -64,7 +81,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                       width: 20,
                     ),
                     Text(
-                      'Privacy policy',
+                      'Privacy Policy',
                       style: TextStyle(
                         color: Colors.white,
                       ),
