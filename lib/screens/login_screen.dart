@@ -102,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               MyButton(
-                customColor: Color.fromARGB(255, 10, 185, 121),
+                customColor: const Color.fromARGB(255, 10, 185, 121),
                 text: 'Sign In',
                 onTap: () {},
               ),
